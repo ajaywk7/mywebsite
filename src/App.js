@@ -18,7 +18,6 @@ class App extends Component {
             <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
               <Nav className="NavItems" >
                 <Nav.Link href="/blog">Blog</Nav.Link>
-                <Nav.Link href="/resume">Resume</Nav.Link>
                 <Nav.Link href="/contactme">Let's Talk</Nav.Link>
               </Nav>
             </Navbar.Collapse>

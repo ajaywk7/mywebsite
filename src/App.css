@@ -11,6 +11,11 @@
   font-family: "Pompiere",sans-serif !important;
 }
 
+li a {
+  color: #000000 !important;
+  padding-bottom: 1px !important;
+}
+
 /*pallete https://colorhunt.co/palette/2763*/
 
 /* common */
@@ -26,14 +31,15 @@
   padding-right: 2px;
 }
 
-.homeintro{
-  background-image: url("./pictures/home-intro.jpg");
-  background-position: center;
-  background-size: cover;
-  min-height: 500px;
-  
-
+.text-orange{
+  color: #ffffff;
+  text-shadow: black;
 }
+
+.link-hover:hover {
+  color : blue !important;
+}
+
 
 /*button*/
 .button {
