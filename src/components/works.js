@@ -2,26 +2,57 @@ import React,{Component} from 'react';
 
 import {Title } from './title';
 import {MyCard} from './MyCard';
-import { Container,Row, Button,Card } from 'react-bootstrap';
+import { Container,Row} from 'react-bootstrap';
+import {Work} from './work';
 
 
-const itercards = (data) => {
-    return (
-            <MyCard data={data} />
-    );
-}
+ 
 
 export class Works extends Component{
     state = {
-        cards:""
+        cards:"",
+        showWork : false,
+        modal :"" 
+        }
+
+    switchModal = () => {
+        var showWork = this.state.showWork;
+        showWork = !showWork;
+        this.setState({
+            showWork:showWork,
+            modal:""
+        });
+    }
+
+    loadData = (data) => {
+        return (
+            <Work show={this.state.showWork} onHide={this.switchModal} data={data} />
+        );
+    }
+
+    selectWork = async(data) => {
+        await this.switchModal();
+        var modal =await this.loadData(data);
+        await this.setState({
+            modal:modal
+
+        });
+        
+        
+    }
+
+    itercards = (data) => {
+            return (
+                    <MyCard data={data} selectWork={this.selectWork} />
+            );
         }
     
     async componentDidMount(){
-        var response = await fetch('https://ajay-blog-backend.herokuapp.com/projects');
+        var response = await fetch('https://ajay-blog-backend.herokuapp.com/posts');
         var data = await response.json();
-        var data = data.map(itercards); 
+        var data = data.map(this.itercards); 
         this.setState({
-            cards:data
+            cards:data,
         })
         
         //console.log(y);
@@ -31,13 +62,13 @@ export class Works extends Component{
         const cards = this.state.cards;
         return (
             <div className="pt-2">
+                {this.state.modal}
                 <Title   title="My Works" />
-                <p className="content font-Robo text-center "> This maybe a very small list. but i am sure there are many yet to come :). </p>
+                <p className=" pt-2 content font-Robo text-center "> This maybe a very small list. but i am sure there are many yet to come :). </p>
 
                 <Container className="">
                     <Row>
-                        {cards.slice(0,6)}
-                        {this.visitBlog}
+                        {cards}
                     </Row>
                 </Container>
             </div>

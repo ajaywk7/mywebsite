@@ -4,6 +4,8 @@ import mern from '../pictures/mern.png';
 import homeintro from '../pictures/image.png';
 import parall2 from '../pictures/work2.jpg';
 import blog from '../pictures/blog.jpg';
+import {Service} from '../components/service';
+
 
 
 import {Title} from '../components/title';
@@ -30,10 +32,13 @@ export class Home extends Component{
                         </div>
                     </div>
                 </Parallax>
+
                 <Title title="about me"/>
                 <Container>
-                    <p className="content">  I am a freelancer aspiring to provide various apt technological solutions to the tech community . I have always loved the essence of programming and it is the only reason i am standing where i am in my educational path.I have worked on various Academic projects and the ones that i loved the most working on are the Web App development projects . I have both experience and knowledge on how Web Applications work. I am acquainted with web technology stacks like MERN (Mongo, Express ,React js, Node js) and i have also worked with Flask+React stack for web app development. This website was a learning project for me as i got more acquainted with both front end and backend development using the MERN stack. </p>
+                    <p className="content text-center">  I’m Ajay Wilkins, a product designer passionate about experiences.An ambitious product designer based on India focusing on creating bold solutions for meaningful businesses. </p>
+                    <Service />
                     <Container className="p-5 " fluid>
+
                         <Row className="">
                             <Col sm={12} md={6}>
                                 <Image src={mern} className="h-100 w-100"/>
@@ -50,6 +55,9 @@ export class Home extends Component{
                                 </Container>
                             </Col>
                         </Row>
+                        <div className="pt-4 d-flex justify-content-center align-items-center">
+                            <Button href="/aboutme" className="button w-120"><span>Learn more</span></Button>
+                        </div>
                     </Container>
                 </Container>
                 <Parallax  bgImage={parall2} strength={400}>
@@ -59,31 +67,8 @@ export class Home extends Component{
                 </Parallax>
                 
                 <Works  />
-                <br />
-                <br />
-                <br />
-                <Container className="pl-4 pr-4 ">
-                        <Row className="">
-                            <Col sm={12} md={6}>
-                                <Image src={blog} className="h-100 w-100"/>
-                            </Col>
-                            <Col sm={12} md={6}>
-                                <Container className="d-flex align-items-center justify-content-center h-100 p-5" >
-                                    <div>
-                                    <h1 className="font-pomp text-center">~ WAIT !! I also have a Blog ~</h1><br/>
-                                    <p className="text-center pt-0 font-Robo">
-                                        So do give it a shot :D.
-                                    </p>
-                                    <div className="d-flex align-items-center justify-content-center h-100 " >
-                                    <Button className="button"><span>VISIT</span> </Button>
-                                    </div>
-                                    
-                                    </div>
-                                </Container>
-                            </Col>
-                        </Row>
-                    </Container>
-                    <br/>
+                <br/>
+                <br/>
                     
             </div>
         );
