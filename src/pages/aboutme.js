@@ -13,7 +13,7 @@ export class Aboutme extends Component
                 
                 return (
                 <div>
-                     <Container className="pl-2 w-100 d-flex justify-content-center align-items-center " style={{height:500}} fluid>
+                     <Container className="pl-2 w-100 d-flex justify-content-center align-items-center " style={{height:700}} fluid>
                         <Container className="text-dark text-left quote-wrapper" > 
                             <h1 className="font-Robo quote">
                             Websites promote you 24/7: No employee will do that.<br />
@@ -32,11 +32,11 @@ export class Aboutme extends Component
                             <Col className="d-flex justify-content-center align-items-center" sm={12} md={6}>
                                 <img className="avatar" src={avatar}  />                            
                             </Col>
-                            <Col className="p-5 d-flex justify-content-center align-items-center text-center"  sm={12} md={6}>
+                            <Col className="p-5 d-flex justify-content-center align-items-center text-justify"  sm={12} md={6}>
                                 <div>
-                                <h1 className="font-pomp display-5">i am <span style={{color:"#1b262c",fontWeight:"bold"}}> AJAY WILKINS </span> </h1>
-                                <h2 className="font-pomp display-5">i am a <span style={{color:"#1b262c",fontWeight:"bold"}}> CREATIVE </span> web developer </h2>
-                                <h2 className="font-pomp display-5">i am a student and a <span style={{color:"#1b262c",fontWeight:"bold"}}> FREELANCER </span> </h2>
+                                <h3 className="font-Robo ">i am <span style={{color:"#0a9cf5",fontWeight:"bold"}}> AJAY WILKINS </span> </h3>
+                                <h4 className="font-Robo ">i am a <span style={{color:"#0a9cf5",fontWeight:"bold"}}> CREATIVE </span> web developer </h4>
+                                <h4 className="font-Robo ">i am a student and a <span style={{color:"#0a9cf5",fontWeight:"bold"}}> FREELANCER </span> </h4>
                                 </div>
                             </Col>
                         </Row>

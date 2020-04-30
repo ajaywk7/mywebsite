@@ -26,11 +26,11 @@ export class MyCard extends Component {
     render(){
         const data = this.state.data;
         return(
-            <Col sm={12} md={4} className="p-3 pb-2  w-100 h-100">
-            <Card className="card shadow h-100 w-100 pointer-cursor" onClick={()=>this.props.selectWork(data)}  >
+            <Col sm={12} md={4} className="p-3  pb-2 w-100 h-100">
+            <Card className=" h-100 w-100 pointer-cursor" onClick={()=>this.props.selectWork(data)}  >
                 <Card.Img src={data.image} variant="top" style={{height:250,objectFit:"cover"}}  />
                 <Container className="p-2 text-center" style={{height:50}} fluid>
-                <Card.Title className="text-uppercase font-pomp font-weight-bold">
+                <Card.Title className=" font-alegreya font-weight-bold  text-dark">
                     {data.title}
                 </Card.Title>
                 </Container>

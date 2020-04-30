@@ -13,7 +13,7 @@ class App extends Component {
           <Container className="p-0 fullPage navbar-clr" fluid>
           <Navbar collapseOnSelect className=" p-0" expand="lg" bg="light" variant="light">
             <Container className="p-0">
-            <Navbar.Brand  href="/"><h3 className="bigTitle pt-2 ">AJAY WILKINS</h3></Navbar.Brand>
+    <Navbar.Brand  href="/"><h3 className="bigTitle pt-2 ">Ajay wilkins </h3></Navbar.Brand>
             <Navbar.Toggle   aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
               <Nav className="NavItems" >

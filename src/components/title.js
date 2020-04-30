@@ -14,8 +14,8 @@ export class Title extends Component{
     render (){
         return (
             <div className="">
-                <h1 className="font-pomp text-uppercase  mt-4 mb-2 text-center display-7 font-weight-bold">{this.state.title}</h1>
-                <div className="title-border d-flex mx-auto mb-3"></div>
+                <h3 className="font-pomp text-uppercase  pt-5  mb-1 text-center font-weight-bold text-dark">{this.state.title}</h3>
+                <div className="title-border border-dark d-flex mx-auto mb-3"></div>
             </div>
         );
     }

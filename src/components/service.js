@@ -16,7 +16,7 @@ export class Service extends Component {
         return(
           <Container >
               <Row className="p-0">
-                <Col sm={12} md={4} className="pr-0 mr-0 d-flex justify-content-center align-items-center text-dark" style={{width:500}}  >
+                <Col sm={12} md={4} className="pt-3 mr-0 d-flex justify-content-center align-items-center text-dark" style={{width:500}}  >
                     <Container className="service">
                     <div className="pt-5 pb-2 d-flex justify-content-center align-items-center">
                         <FcBusiness  size={85} title="Freelancer" />
@@ -25,7 +25,7 @@ export class Service extends Component {
                     <p className="pl-3 pr-3  text-center" > I freelance for all kinds of projects under my expertise </p>
                     </Container>
                 </Col>
-                <Col sm={12} md={4} className="pl-0 pr-0 mr-0 w-100 h-100 d-flex justify-content-center align-items-center text-dark"  >
+                <Col sm={12} md={4} className="pt-3 mr-0 w-100 h-100 d-flex justify-content-center align-items-center text-dark"  >
                     <Container className="service">
                     <div className="pt-5 pb-2 d-flex justify-content-center align-items-center">
                         <RiCodeSSlashLine  size={85} title="ajay" />
@@ -34,7 +34,7 @@ export class Service extends Component {
                     <p className="pl-3 pr-3  text-center" > I develop attractive Full stack web apps with the MERN stack </p>
                     </Container>
                 </Col>
-                <Col sm={12} md={4} className="pl-0 w-100 h-100 d-flex justify-content-center align-items-center text-dark"  >
+                <Col sm={12} md={4} className="pt-3 w-100 h-100 d-flex justify-content-center align-items-center text-dark"  >
                     <Container className="service">
                     <div className="pt-5 pb-2 d-flex justify-content-center align-items-center">
                         <FcPhoneAndroid  size={85} title="ajay" />
